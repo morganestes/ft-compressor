@@ -184,7 +184,6 @@ Global
 		$30.MessageStyle = $31
 		$31.LineAlign = 0
 		$30.inheritsSet = Mono
-		description = Refactored to use StringBuilder.
-		version = 0.2
+		version = 0.2.1
 	EndGlobalSection
 EndGlobal

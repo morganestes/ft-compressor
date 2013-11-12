@@ -28,10 +28,8 @@ namespace MorganEstes
 	{
 		public static string CompressString(string s)
 		{
-			int intStringLength = s.Length;
-
 			// pad the string if necessary
-			if ((intStringLength & 1) != 0) {
+			if ((s.Length & 1) != 0) {
 				s += " ";
 			}
 
@@ -39,7 +37,7 @@ namespace MorganEstes
 			int intStr1, intStr2;
 			StringBuilder strOut = new StringBuilder();
 
-			for (int i = 0; i < intStringLength; i += 2)
+			for (int i = 0; i < s.Length; i += 2)
 			{
 				// Char.ConvertToUtf32(string, pos) is JS string.charCodeAt(pos)
 				intStr1 = Char.ConvertToUtf32(s, i) * 256;

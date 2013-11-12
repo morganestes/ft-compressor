@@ -10,7 +10,7 @@
     <RootNamespace>MorganEstes</RootNamespace>
     <AssemblyName>ftCompressor</AssemblyName>
     <newfilesearch>OnLoad</newfilesearch>
-    <ReleaseVersion>0.2</ReleaseVersion>
+    <ReleaseVersion>0.2.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
