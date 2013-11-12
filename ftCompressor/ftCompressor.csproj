@@ -51,4 +51,12 @@
     <Compile Include="FTCompressor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="loop-concat.png">
+      <Visible>False</Visible>
+    </None>
+    <None Include="loop-strbuilder.png">
+      <Visible>False</Visible>
+    </None>
+  </ItemGroup>
 </Project>
