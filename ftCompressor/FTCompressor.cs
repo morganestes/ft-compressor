@@ -20,10 +20,7 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using System.Collections.Generic;
 using System.Text;
-using System.IO;
-using System.Diagnostics;
 
 namespace MorganEstes
 {
@@ -40,7 +37,6 @@ namespace MorganEstes
 
 			// compress the string
 			int intStr1, intStr2;
-			//string strOut = "";
 			StringBuilder strOut = new StringBuilder();
 
 			for (int i = 0; i < intStringLength; i += 2)
@@ -51,12 +47,10 @@ namespace MorganEstes
 
 				// Char.ConvertFromUtf32(int) is JS String.fromCharCode(int)
 				strOut.Append(Char.ConvertFromUtf32(intStr1 + intStr2));
-				//strOut += Char.ConvertFromUtf32(intStr1 + intStr2);
 			}
 
 			// Prepend the snowman character to the string
 			return strOut.Insert(0, Convert.ToChar(9731)).ToString();
-			//return Convert.ToChar(9731) + strOut;
 		}
 
 		public static string DecompressString(string s)
